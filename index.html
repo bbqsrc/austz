@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <title>Strine Timezones</title>
+  <script src='deps.min.js'></script>
+  <style>
+    #container { margin: 0 auto; max-width: 920px; font-family: sans-serif; background-color: white; }
+    #output {
+      text-align: left;
+    }
+#tools > * { line-height: 1.8em; border: 1px solid #d9d9d9; 
+             display: inline-block; padding: 0.3em 0.5em ;}
+#output { border: 1px solid #d9d9d9; border-left: 10px solid #d9d9d9;border-collapse: collapse; }
+#output td, #output th { padding: 0.2em 0.3em; }
+  </style>
+</head>
+<body>
+  <div id='container'>
+    <h1>Australian Timezones</h1>
+    <div id='tools' style='margin-bottom: 1em'>
+      <div>
+        <label for='date'>Date:</label>
+        <input placeholder="yyyy-mm-dd" type='date' id='date'>
+        <button type='button' id='todayBtn'>Today</button>
+      </div>
+      <div>
+        <label for='time'>Time:</label>
+        <input placeholder="hh:mm" type='time' id='time'>
+      </div>
+      <div>
+        <label for='place'>Timezone:</label>
+        <select id='place'></select>
+      </div>
+    </div>
+    <table id="output">
+
+    </table>
+  </div>
+  <script src='app.js'></script>
+</body>
+</html>
